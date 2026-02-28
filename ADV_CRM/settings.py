@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'example',
-    'platforms',
+    'example.apps.ExampleConfig',
+    'platforms.apps.PlatformsConfig',
 ]
 
 MIDDLEWARE = [
@@ -121,3 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+CURRENCIES = ['USD', 'EUR', 'BGN', 'RUB', 'GBP']
+
+TIMEZONES = ['Europe/Sofia','Europe/Moscow','Europe/Berlin','Asia/Dubai','UTC']
